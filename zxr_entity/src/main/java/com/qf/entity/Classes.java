@@ -16,6 +16,6 @@ import lombok.experimental.Accessors;
 @Accessors(chain = true)
 public class Classes extends BaseEntity{
     private String cname;
-    private Integer total;
+    private Integer cnum;
     private Integer tid;
 }
