@@ -10,4 +10,6 @@ import java.util.List;
  */
 public interface IClsService {
     List<Classes> list();
+
+    Classes getClsInfo(Integer cid);
 }

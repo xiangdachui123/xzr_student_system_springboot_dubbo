@@ -10,4 +10,6 @@ import java.util.List;
  */
 public interface ITeacherService {
     List<Teacher> list();
+
+    Teacher getTeacherInfo(Integer tid);
 }

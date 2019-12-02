@@ -25,4 +25,10 @@ public class ClsServiceImpl implements IClsService {
         List<Classes> classes = clsMapper.selectList(null);
         return classes;
     }
+
+    @Override
+    public Classes getClsInfo(Integer cid) {
+
+        return clsMapper.selectById(cid);
+    }
 }

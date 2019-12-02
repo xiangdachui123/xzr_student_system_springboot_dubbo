@@ -23,4 +23,9 @@ public class TeacherServiceImpl implements ITeacherService {
         List<Teacher> teacherList = teacherMapper.selectList(null);
         return teacherList;
     }
+
+    @Override
+    public Teacher getTeacherInfo(Integer tid) {
+        return teacherMapper.selectById(tid);
+    }
 }
